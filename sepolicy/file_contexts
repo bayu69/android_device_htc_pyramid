@@ -1,13 +1,17 @@
 /dev/kgsl-2d[01]				u:object_r:gpu_device:s0
+/dev/msm_rotator				u:object_r:graphics_device:s0
 /dev/lightsensor				u:object_r:sensors_device:s0
 /dev/cm3602					u:object_r:sensors_device:s0
-/dev/gemini0					u:object_r:camera_device:s0
+/dev/gemini.*					u:object_r:camera_device:s0
+/dev/msm_camera(/.*)?				u:object_r:camera_device:s0
 /data/cam_socket(.*)				u:object_r:camera_socket:s0
 /sys/camera_htccallback/htccallback		u:object_r:sysfs_camera:s0
-/sys/keyboard/vol_wakeup			u:object_r:sysfs_keyboard:s0
+/sys/module/mdp/parameters/mdp_gamma_cooler_colors			u:object_r:sysfs_misc:s0
+/sys/keyboard/vol_wakeup			u:object_r:sysfs_misc:s0
 /dev/block/mmcblk0p(.*)				u:object_r:mmc_block_device:s0
 /dev/socket/mpctl				u:object_r:mpctl_socket:s0
 /dev/timerirq					u:object_r:timerirq_dev:s0
 /data/system/default_values			u:object_r:mpctl_data_file:s0
+/dev/htc-acoustic				u:object_r:audio_device:s0
 /dev/rfkill					u:object_r:rfkill_device:s0
 

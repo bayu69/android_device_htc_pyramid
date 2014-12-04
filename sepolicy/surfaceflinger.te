@@ -1,1 +1,2 @@
+allow surfaceflinger audio_device:chr_file rw_file_perms;
 allow surfaceflinger gpu_device:chr_file rw_file_perms;

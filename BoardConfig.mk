@@ -151,11 +151,14 @@ BOARD_SEPOLICY_UNION += \
         device.te \
         file.te \
         file_contexts \
+        init.te \
+        init_shell.te \
         mediaserver.te \
         mm-qcamerad.te \
         mpdecision.te \
         netmgrd.te \
         qmuxd.te \
+        rild.te \
         rmt_storage.te \
         surfaceflinger.te \
         system_server.te \
